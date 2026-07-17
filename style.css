@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.headerContainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(46,46,46);
+}
+
+
+.siteName{
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    --siteName_red: rgb(255,0,0);
+    --siteName_white: rgb(255,255,255);
+    color: white;
+}
+
+.siteName_red{
+    color: var(--siteName_red);
+    transition: 0.5s;
+}
+
+.siteName_white{
+    color: var(--siteName_white);
+    transition: 0.5s;
+}
+.siteName:hover{
+    --siteName_red: rgb(255,255,255);
+    --siteName_white: rgb(255,0,0);
+    cursor: default;
+}
+
+.container{
+    height: 100vh;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(180deg,rgb(0,0,0),rgb(0,0,100));
+    width: 100%;
+    height: 100%;
+    color: white;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110px;
+    max-height: 300px;
+    min-width: 110px;
+    max-width: 60%;
+    border: 2px solid gray;
+    font-size: 40px;
+    border-radius: 30px;
+    background-color: rgb(30,30,150);
+    text-align: center;
+    transition: 0.5s;
+    font-size: 0;
+    --imageWidth: 100px;
+    --imageHeight: 100px;
+}
+
+.button a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.button:hover{
+    text-decoration: underline;
+    font-size: 35px;
+    --imageWidth: 0;
+    --imageHeight: 0;
+    --emailIconSize: 0;
+}
+
+.communicationImage{
+    width: var(--imageWidth);
+    height: var(--imageHeight);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.5s;
+}
